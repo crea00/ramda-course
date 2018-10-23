@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "jest": "^23.6.0",
+    "ramda": "^0.25.0"
+  }
+}
