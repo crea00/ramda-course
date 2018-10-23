@@ -3,6 +3,7 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
     "jest": "^23.6.0",
     "ramda": "^0.25.0"
   }
