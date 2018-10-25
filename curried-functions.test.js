@@ -2,12 +2,12 @@ const { curry, __ } = require('ramda');
 const { pbkdf2 } = require('crypto');
 
 const keyGen = curry(pbkdf2);
-const salt = 'someuniquestringforsalt';
+const salt = 'someuniquestringtoactasasalt';
 const iterations = 1000;
 const len = 24;
 const digest = 'sha512';
 const keyGenWithPassword = keyGen('cats12')(salt)(iterations)(len)(digest);
-const stored = '3d9a592b9afd5292d4b018ca0cba9f79f36af6692adf77a8';
+const stored = '0409757bb520dfc434eb9252b1176082324af3134f71e247';
 const verify = keyGen(__, salt, iterations, len, digest);
 
 
